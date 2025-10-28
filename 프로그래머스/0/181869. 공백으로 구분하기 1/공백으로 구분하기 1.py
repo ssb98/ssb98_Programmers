@@ -4,3 +4,6 @@ def solution(my_string):
     for str in my_string:
         answer.append(str)
     return answer
+
+# def solution(my_string):
+#     return my_string.split()
