@@ -1,5 +1,9 @@
-def solution(n):
-    answer = 0
+def solution(n): 
+    answer = 0 
+    pizza = [] 
     for i in range(1, 101):
-        if (i * 6) % n ==0:
-            return i
+        for j in range(1, 101):
+            if n*i == 6*j:
+                pizza.append(6*j)
+                answer = min(pizza)//6 
+    return answer
